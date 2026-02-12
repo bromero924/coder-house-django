@@ -21,7 +21,7 @@ from prueba.views import index, notas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path("", index),
     path("prueba/", index),
     path("notas/", notas),
 ]
