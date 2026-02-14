@@ -8,11 +8,20 @@
 </head>
 
 <body>
-    hola !!! {{ titulo }}
+    <h1> Clientes </h1>
+    <ul>
+
+        {% for cliente in clientes %}
+        <li>{{cliente.nombre}} {{cliente.apellido}}</li>
+
+        {% endfor %}
+    </ul>
 
 
 
-    <a href="/notas/"> ver notas </a>
+
+
+
 </body>
 
 </html>
